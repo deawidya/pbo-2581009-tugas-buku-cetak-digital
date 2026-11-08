@@ -28,6 +28,7 @@ public class Main {
                 + buku3.hargaAkhir();
 
         System.out.println("-------------------------------------------");
-        System.out.println("Total bayar : " + Buku.formatRupiah(totalBayar));
+        System.out.println("Total bayar : Rp"
+                + String.format("%,d", totalBayar).replace(',', '.'));
     }
 }
